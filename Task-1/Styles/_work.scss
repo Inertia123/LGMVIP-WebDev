@@ -1,0 +1,25 @@
+.work{
+    background: rgb(240, 240, 38);
+    padding: 2.5rem 5rem;
+    h1{
+        text-align: center;
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+        text-shadow: 1px 1px 1px #000000;
+    }
+    .swiper-container{
+        height: 600px;
+        width: 65%;
+        
+        .swiper-wrapper{
+            .swiper-slide{
+                img{
+                    width: 100%;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

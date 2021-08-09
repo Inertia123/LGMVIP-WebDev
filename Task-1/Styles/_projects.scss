@@ -1,0 +1,61 @@
+.projects{
+    padding: 3.5rem;
+    h1{
+        text-align: center;
+        font-size: 2.7rem;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    .project-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 5rem;
+        gap: 2rem;
+        .pro{
+            text-align: center;
+            flex: 1;
+            height: 100%;
+            background: $BurntRed;
+            color: white;
+            box-shadow: 16px 39px 68px -33px rgba(53,53,53,0.47);            
+            &:hover{
+                background: rgb(213, 216, 61);
+                color: black;
+            }
+            h1{
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+                text-shadow: 1px 1px 2px #242222;
+            }
+            p{
+                font-size: 0.8rem;
+                max-width: 23rem;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+                line-height: 1.7rem;
+                font-weight: 400;
+            }
+            button{
+                border: none;
+                background: $Red;
+                color: white;
+                font-size: 1rem;
+                padding: 0.7rem 1.5rem;
+                border-radius: 0.3rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                text-shadow: 2px 2px 4px #000000;
+                &:hover{
+                    background-color: $Charcoal;
+                }
+            }
+            .project-photo{
+
+                img{
+                    width: 100%;
+                    height: 17rem;
+                }
+            }
+        }
+    }
+}

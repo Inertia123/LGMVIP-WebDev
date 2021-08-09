@@ -1,0 +1,61 @@
+.newsletter{
+    padding: 5rem;
+    background: rgb(240, 240, 38);
+    .sign-container{
+        max-width: 55%;
+        margin: 0 auto;
+        background: white;
+        border-top: 8px solid black;
+        padding: 4rem 2.5rem;
+        box-shadow: 0px 21px 81px -27px rgba(0,0,0,0.68);
+        .sign-wrapper{
+            h1{
+                font-size: 3.3rem;
+                letter-spacing: 0.2rem;
+            }
+            h2{
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+            .place{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                .inp{
+                    padding: 0.7rem 0.5rem;
+                    width: 23rem;
+                    border: 3px solid black;
+                    
+                }
+                ::placeholder{
+                    font-family: $Font2;
+                    font-size: 1rem;
+                    color: black;
+                    font-weight: 700;
+                }
+                button{
+                    padding: 0.7rem 2rem;
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    text-shadow: 2px 2px 4px #000000;
+                    &:hover{
+                        background: $Red;
+                        
+                    }
+
+                }
+            }
+            p{
+                font-size: 0.8rem;
+                font-style: italic;
+                font-weight: 700;
+            }
+        }
+    }
+}

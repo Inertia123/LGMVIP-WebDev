@@ -1,0 +1,33 @@
+.video-projects{
+  background: hsl(0, 0%, 95%);
+    color:white;
+    padding: 2.5rem 5rem;
+    padding-bottom: 5%;
+    h1{
+        font-size: 2.7rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: black;
+        text-shadow: 1px 1px 2px #000000;
+    }
+  }
+  .video-wrapper {
+    overflow: hidden;
+  }
+  .video-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform: translateX(0);
+  }
+
+  @keyframes slide {
+  from {transform: translateX(0);}
+  to {transform: translateX(-25%);}
+  }

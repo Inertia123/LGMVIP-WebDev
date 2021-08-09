@@ -1,0 +1,49 @@
+footer{
+    padding: 5rem 0 3rem;
+    .footer-container{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 7rem;
+        .col{
+            h1{
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+            p{
+                line-height: 2.6rem ;
+            }
+            .footer-socials{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                max-width: 10rem;
+                gap: 2.5rem;
+                a{
+                    font-size: 1.6rem;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    background: #201f1f;
+    padding: 0.7rem;
+    color: white;
+    p{
+        font-weight: 200;
+        span{
+            color: rgb(160, 158, 158);
+            font-weight: 800;
+
+        }
+    }
+}

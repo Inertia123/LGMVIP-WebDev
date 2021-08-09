@@ -1,0 +1,54 @@
+.team{
+    padding: 2.5rem;
+    text-align: center;
+    h1{
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    .team-container{
+        .team-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+            .team-pics{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10rem;
+                .team-members{
+                    h2{
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 0.9rem;
+                        color: rgb(153, 147, 147);
+                    }
+                    img{
+                        width: 13rem;
+                        height: 13rem;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    .soc{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.5rem;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1rem;
+                            &:hover{
+                                color: gray;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

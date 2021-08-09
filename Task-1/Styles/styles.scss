@@ -1,0 +1,27 @@
+// Variables
+$Yellow: #f3df00;
+$BurntRed: #ff7755;
+$Charcoal: rgb(34, 33, 33);
+$Red: rgb(255, 37, 37);
+$Font1: 'Righteous', cursive;
+$Font2: 'Poppins', sans-serif;
+
+@import 'hero';
+@import 'about';
+@import 'work';
+@import 'projects';
+@import 'video';
+@import 'team';
+@import 'sign';
+@import 'blogs';
+@import 'contact';
+@import 'footer';
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $Font2;
+}
