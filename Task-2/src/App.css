@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background:rgb(231, 231, 231);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  background: rgb(255, 255, 38);
+  box-shadow: -5px -4px 14px -2px rgba(0, 0, 0, 0.466);
+  position: relative;
+}
+.button {
+  border: none;
+  background: red;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgb(56, 56, 56);
+}
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 1px 1px 3px rgba(61, 61, 61, 0.568);
+}
+.card {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 3em;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  
+}
+.toggle{
+  display:none;
+}
+.toggle:checked ~ #main{
+  display: block;
+}
+.card .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  width: 20rem;
+  height: 18rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(129deg, rgba(244,255,61,1) 51%, rgba(255,177,31,1) 96%);
+    box-shadow:  14px 14px 34px #d8d8d8,
+               -14px -14px 34px #fefefe;
+}
+.card-img-top {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+.card-title {
+  font-size: 1.7rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1.5px 1px 3px rgba(0, 0, 0, 0.568);
+}
+.card-text {
+  font-size: 0.9rem;
+}
+.card-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+#main{
+  width: 8rem;
+  height: 8rem;
+  border: 10px solid rgb(192, 192, 192);
+  border-right: 10px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  left: 45%;
+  top: 300%;
+  transform: translateX(-50%);
+  z-index: -1;
+  animation: spinner 0.7s infinite linear;
+  display: none;
+}
+@keyframes spinner{
+ 0%{
+    transform: rotate(0deg);
+    /* transform-origin: center; */
+ }
+ 100%{
+   transform: rotate(360deg);
+   /* transform-origin: center; */
+ }
+}
